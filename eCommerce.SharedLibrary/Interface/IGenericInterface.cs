@@ -10,7 +10,7 @@ public interface IGenericInterface<T> where T : class
     Task<Response> UpdateAsync(T entity);  
     Task<Response> DeleteAsync(T entity);  
     Task<IEnumerable<T>> GetAllAsync();
-    Task<T> FindByidAsync(int id);
+    Task<T> FindByIdAsync(int id);
     Task<T> GetByAsync(Expression<Func<T,bool>> predicate);
 
 }
