@@ -19,6 +19,19 @@ namespace ProductApi.Presentation.Controllers
 
             var (_, list) = ProductConversion.FromEntity(null!,products);
             return list.Any() ? Ok(list) : NotFound("No Product Found");
-        }  
+        }
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<ProductDTO>> GetProduct(int id) 
+        {
+            var product = await productInterface.FindByIdAsync(id);
+            if (product is null)
+                return NotFound("Product Requested Not Found.");
+
+            var (_product, _) = ProductConversion.FromEntity(product, null!);
+            return _product is not null ? Ok(_product) : NotFound("No Product Found");
+
+
+        }
     }
 }
