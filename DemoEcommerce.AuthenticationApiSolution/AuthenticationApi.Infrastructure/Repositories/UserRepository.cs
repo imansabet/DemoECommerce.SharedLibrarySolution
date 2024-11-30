@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 namespace AuthenticationApi.Infrastructure.Repositories
 {
     internal class UserRepository
-        (AuthenticationDbContext context,IUser userInterface,IConfiguration configuration) : IUser
+        (AuthenticationDbContext context,IConfiguration configuration) : IUser
     {
         private async Task<AppUser> GetUserByEmail(string email) 
         {
@@ -90,5 +90,7 @@ namespace AuthenticationApi.Infrastructure.Repositories
                 : new Response(false, "Invalid data");
 
         }
+
+       
     }
 }

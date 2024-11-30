@@ -7,5 +7,5 @@ public interface IUser
 {
     Task<Response> Register(AppUserDTO appUserDTO); 
     Task<Response> Login(LoginDTO loginDTOS);
-    Task<AppUserDTO> GetUser(int userId);
+    Task<GetUserDTO> GetUser(int userId);
 }
