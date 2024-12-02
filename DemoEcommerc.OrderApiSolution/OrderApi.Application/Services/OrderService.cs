@@ -27,7 +27,7 @@ public class OrderService
     {
         // Call Product Api using HttpClient
         // Redirect this Call to the Api Gateway
-        var getUser = await httpClient.GetAsync($"/api/users/{userId}");
+        var getUser = await httpClient.GetAsync($"/api/authentication/{userId}");
         if (!getUser.IsSuccessStatusCode)
             return null!;
         var user = await getUser.Content.ReadFromJsonAsync<AppUserDTO>();
