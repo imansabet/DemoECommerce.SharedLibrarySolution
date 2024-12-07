@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApi.Application", "ProductApi.Application\ProductApi.Application.csproj", "{C9942C87-A888-4705-B5BF-6B67B2D20A77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApi.Application", "ProductApi.Application\ProductApi.Application.csproj", "{C9942C87-A888-4705-B5BF-6B67B2D20A77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApi.Domain", "ProductApi.Domain\ProductApi.Domain.csproj", "{23CFD561-8BCB-44AC-B45C-2729A70252EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApi.Domain", "ProductApi.Domain\ProductApi.Domain.csproj", "{23CFD561-8BCB-44AC-B45C-2729A70252EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApi.Infrastructure", "ProductApi.Infrastructure\ProductApi.Infrastructure.csproj", "{B42F4CC1-B7D0-4790-BFCE-E589F05F2BC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApi.Infrastructure", "ProductApi.Infrastructure\ProductApi.Infrastructure.csproj", "{B42F4CC1-B7D0-4790-BFCE-E589F05F2BC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApi.Presentation", "ProductApi.Presentation\ProductApi.Presentation.csproj", "{12AEAA3D-0020-4DD9-BE3A-09DE5937378C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApi.Presentation", "ProductApi.Presentation\ProductApi.Presentation.csproj", "{12AEAA3D-0020-4DD9-BE3A-09DE5937378C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eCommerce.SharedLibrary", "..\eCommerce.SharedLibrary\eCommerce.SharedLibrary.csproj", "{5CCBCAAE-BEB9-4426-BA7A-BB9EF5CBC6C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{98BF33A2-F2F7-43E4-9CB8-EFC278DE8897}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{43E57EF4-81D5-447D-BD24-CCE3DFC03029}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest.ProductApi", "UnitTest.ProductApi\UnitTest.ProductApi.csproj", "{A9FFB26A-3DD2-4880-BE34-AEFD426CA32D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +45,21 @@ Global
 		{5CCBCAAE-BEB9-4426-BA7A-BB9EF5CBC6C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CCBCAAE-BEB9-4426-BA7A-BB9EF5CBC6C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CCBCAAE-BEB9-4426-BA7A-BB9EF5CBC6C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9FFB26A-3DD2-4880-BE34-AEFD426CA32D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9FFB26A-3DD2-4880-BE34-AEFD426CA32D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9FFB26A-3DD2-4880-BE34-AEFD426CA32D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9FFB26A-3DD2-4880-BE34-AEFD426CA32D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9942C87-A888-4705-B5BF-6B67B2D20A77} = {98BF33A2-F2F7-43E4-9CB8-EFC278DE8897}
+		{23CFD561-8BCB-44AC-B45C-2729A70252EF} = {98BF33A2-F2F7-43E4-9CB8-EFC278DE8897}
+		{B42F4CC1-B7D0-4790-BFCE-E589F05F2BC1} = {98BF33A2-F2F7-43E4-9CB8-EFC278DE8897}
+		{12AEAA3D-0020-4DD9-BE3A-09DE5937378C} = {98BF33A2-F2F7-43E4-9CB8-EFC278DE8897}
+		{5CCBCAAE-BEB9-4426-BA7A-BB9EF5CBC6C1} = {98BF33A2-F2F7-43E4-9CB8-EFC278DE8897}
+		{A9FFB26A-3DD2-4880-BE34-AEFD426CA32D} = {43E57EF4-81D5-447D-BD24-CCE3DFC03029}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {55D477B4-B91A-420B-9605-FDDB67B59F3F}
